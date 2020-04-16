@@ -73,7 +73,6 @@ function mortgageCalculator(principal, periods, monthlyInterestRate) {
     return principal * monthlyInterestRate * (Math.pow(1 + i, periods)) / (Math.pow(1 + i, periods) - 1);
 }
 
-console.log(calculator);
 
 
 // 🏡 Task 4: Arguments and Parameters
@@ -82,6 +81,8 @@ console.log(calculator);
 For example,
 mortgageCalculator(2000000, 0.05, 30); <-- should return 1,073.64
 */
+
+mortgageCalculator(200000, 0.05, 30); 
 
 // 🏡 Task 5: Conditionals
 /* Add another paramter to your function called credit score. This parameter will be a number between 0 and 800 (a credit score).
