@@ -47,20 +47,20 @@ When your math is correct, monthlyRate will equal 1073.64
 // [ ( 1 + I )^N – 1 ] // Dominator
 
 
+let principal = 200000;
+let interestRate = 0.05;
+let years = 30;
+
+let monthlyInterestRate = interestRate / 12;
+let periods = years * 12;
+
 let numerator = Math.pow(1 + interestRate, periods);
 let denominator = Math.pow(1 + interestRate) - 1;
 let other = principal * monthlyInterestRate;
 
-return other * numerator * denominator
+let answer = other * numerator / denominator;
 
-
-// function calculator(principal, periods, monthlyInterestRate) {
-//     return principal * monthlyInterestRate * (Math.pow(1 + i, periods)) / (Math.pow(1 + i, periods) - 1);
-// }
-
-// console.log(calculator);
-
-
+return answer;
 
 
 // 🏡 Task 3: Function
@@ -69,7 +69,11 @@ return other * numerator * denominator
 If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly rate is 1073.64"
 */
 
-function mortgageCalculator()
+function mortgageCalculator(principal, periods, monthlyInterestRate) {
+    return principal * monthlyInterestRate * (Math.pow(1 + i, periods)) / (Math.pow(1 + i, periods) - 1);
+}
+
+console.log(calculator);
 
 
 // 🏡 Task 4: Arguments and Parameters
