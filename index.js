@@ -8,6 +8,8 @@ let principal = 200000;
 let interestRate = 0.05;
 let years = 30;
 
+
+
 // 🏡 Task 1.5: Simple Math
 /* To create a monthly mortgage rate calculator, we need to know the number of years in months and the monthly interest rate. 
 
@@ -17,6 +19,9 @@ Create another variable called `periods` and give it the value of years*12.
 */
 let monthlyInterestRate = interestRate / 12;
 let periods = years * 12;
+
+
+
 
 // 🏡 Task 2: Harder Math
 /* Create your calculator! Use the formula in the ReadMe to run calculations on your numbers. Save the final value into a variable called monthlyRate.
@@ -29,30 +34,36 @@ When your math is correct, monthlyRate will equal 1073.64
 */
 
 // function calculator(principal, periods, monthlyInterestRate);
+// console.log(calculator);
+
+// M = monthly payment
+// P = Principal Amt
+// I = Interest Rate
+// N = Number of Months (Periods)
+
+// M = P 
+// [ I ( 1 + I )^N ] // Numerator
+// / 
+// [ ( 1 + I )^N – 1 ] // Dominator
+
+
+let numerator = Math.pow(1 + interestRate, periods);
+let denominator = Math.pow(1 + interestRate) - 1;
+let other = principal * monthlyInterestRate;
+
+return other * numerator * denominator
+
+
+// function calculator(principal, periods, monthlyInterestRate) {
+//     return principal * monthlyInterestRate * (Math.pow(1 + i, periods)) / (Math.pow(1 + i, periods) - 1);
+// }
 
 // console.log(calculator);
 
-function calculator(principal, periods, monthlyInterestRate) {
-    return principal * monthlyInterestRate * (Math.pow(1 + i, periods)) / (Math.pow(1 + i, periods) - 1);
-}
 
-console.log(calculator);
+
 
 // 🏡 Task 3: Function
-////////////////////////////////////////////////////////////////////////////////////////////////
-// parameters are placeholder values - doesn't matter what we call them, what matters is the order 
-// arugments are the actual values we pass in when we invoke the function
-////////////////////////////////////////////////////////////////////////////////////////////////
-// function add(num1, num2){
-//     return num1 + num2;
-//   }
-  
-//   console.log(add(4, 5));
-  
-//   console.log(add('javaScript ', 'is awesome!'));
-////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 /* Create a function called `mortgageCalculator` that combines all of the steps from task 1 and 2 and returns a sentence "{Name}, your monthly rate is ${monthlyRate}"
 
 If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly rate is 1073.64"
@@ -120,3 +131,21 @@ function paymentMonth(principal, periods, monthlyInterestRate) {
 }
 
 console.log(paymentMonth);
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+// parameters are placeholder values - doesn't matter what we call them, what matters is the order 
+// arugments are the actual values we pass in when we invoke the function
+////////////////////////////////////////////////////////////////////////////////////////////////
+// function add(num1, num2){
+//     return num1 + num2;
+//   }
+  
+//   console.log(add(4, 5));
+  
+//   console.log(add('javaScript ', 'is awesome!'));
+////////////////////////////////////////////////////////////////////////////////////////////////
