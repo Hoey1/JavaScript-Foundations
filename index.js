@@ -28,22 +28,38 @@ Hint #2: you'll need to use the `math` object for parts of this calculation!
 When your math is correct, monthlyRate will equal 1073.64
 */
 
+// function calculator(principal, periods, monthlyInterestRate);
 
+// console.log(calculator);
 
-function calculator(principal, periods, monthlyInterestRate);
-
-console.log(calculator);
-
-function paymentMonth(principal, periods, monthlyInterestRate) {
+function calculator(principal, periods, monthlyInterestRate) {
     return principal * monthlyInterestRate * (Math.pow(1 + i, periods)) / (Math.pow(1 + i, periods) - 1);
 }
 
+console.log(calculator);
 
 // 🏡 Task 3: Function
+////////////////////////////////////////////////////////////////////////////////////////////////
+// parameters are placeholder values - doesn't matter what we call them, what matters is the order 
+// arugments are the actual values we pass in when we invoke the function
+////////////////////////////////////////////////////////////////////////////////////////////////
+// function add(num1, num2){
+//     return num1 + num2;
+//   }
+  
+//   console.log(add(4, 5));
+  
+//   console.log(add('javaScript ', 'is awesome!'));
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 /* Create a function called `mortgageCalculator` that combines all of the steps from task 1 and 2 and returns a sentence "{Name}, your monthly rate is ${monthlyRate}"
 
 If your name is `Oscar` mortgageCalculator() should return "Oscar, your monthly rate is 1073.64"
 */
+
+function mortgageCalculator()
+
 
 // 🏡 Task 4: Arguments and Parameters
 /* Substitute the variables in your functions for parameters such that you can substitute `P`, `I`, and `N` when you call the function.
@@ -85,3 +101,22 @@ For example, variableInterestRate(200000, 0.04, 30) should console.log:
 /* 🏡 Explore using `window.prompt()` to allow a user to input parameters in the browser */
 
 /* 🏡  Refactor your `variableInterestRate()` function to accept an array of interest rates (make sure to copy and paste as to not lose your work!) */
+
+
+let principal = 200000;
+let interestRate = 0.05;
+let years = 30;
+
+let monthlyInterestRate = interestRate / 12;
+let periods = years * 12;
+
+
+function calculator(principal, periods, monthlyInterestRate);
+
+console.log(calculator);
+
+function paymentMonth(principal, periods, monthlyInterestRate) {
+    return principal * monthlyInterestRate * (Math.pow(1 + i, periods)) / (Math.pow(1 + i, periods) - 1);
+}
+
+console.log(paymentMonth);
