@@ -13,8 +13,8 @@ The module challenge is the afternoon project or assignment that students work t
 - write a basic for loop / while loop.
 - write control flow using if/else statements.
 - use function declarations, expressions, and arrow
-functions and describe their differences
-  
+  functions and describe their differences
+
 ## Introduction
 
 Today you'll build a mortgage rate calculator that runs in the console. As you learned today, JavaScript is great for adding functionality and interactivity to a webpage. In our exercises today we won't be working with the visual part of the webpage, but the work you do here could be combined with HTML and CSS to create a fully functioning single page application.
@@ -24,6 +24,7 @@ The formula for a monthly mortgage payment is as follows:
 ![calculation](https://tk-assets.lambdaschool.com/b515edce-5acc-46b9-8194-8d407469771f_ScreenShot2020-04-07at3.29.59PM.png)
 
 Or, in plain text:
+
 ```
 M = P [ I ( 1 + I )^N ] / [ ( 1 + I )^N – 1 ]
 ```
@@ -44,10 +45,10 @@ Check out the resources below for more of a step-by-step walk-through of this ma
 
 Using VSCode and Command Line:
 
-1. Fork repo and add TL as collaborator on Github.
-2. Clone your fork (not Lambda's repo by mistake!).
-3. `cd` into your newly cloned repository.
-4. Create a new branch by typing `git checkout -b <firstName-lastName>`.
+[✔️] 1. Fork repo and add TL as collaborator on Github.
+[✔️] 2. Clone your fork (not Lambda's repo by mistake!).
+[✔️] 3. `cd` into your newly cloned repository.
+[✔️] 4. Create a new branch by typing `git checkout -b <firstName-lastName>`.
 
 ### Task 2: Complete MVP Requirements
 
@@ -59,7 +60,7 @@ As you work on your code you should make use of `console.log` to check your prog
 
 After you have completed the requirements, try any of the following challenges. As always, note that these may require additional research beyond what you learned in this module.
 
-- [ ] Add  `Property Tax`, `Homeowner's insurance` and `HOA fees` as parameters in your function to calculate total monthly spending on housing
+- [ ] Add `Property Tax`, `Homeowner's insurance` and `HOA fees` as parameters in your function to calculate total monthly spending on housing
 - [ ] Build a calculator function that accepts `monthly payment` and `interest rate` and returns the maximum loan that a person could afford
 - [ ] Explore using `window.prompt()` to allow a user to input parameters in the browser
 - [ ] Refactor your `variableInterestRate()` function to accept an array of interest rates (make sure to copy and paste as to not lose your work!)
